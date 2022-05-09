@@ -3,6 +3,10 @@ Se realiza prueba para empresea I4digital
 
 Los servicios desarrollados fueron los siguientes
 
+## Nota
+El proyecto debe abrirse en el ide de intelijidea
+
+
 ## Registrar los resultados y obtener el riesgo 
 
 Post http://localhost:8080/api/patient/results
