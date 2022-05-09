@@ -5,7 +5,7 @@ Los servicios desarrollados fueron los siguientes
 
 ## Registrar los resultados y obtener el riesgo 
 
-post http://localhost:8080/api/patient/results
+Post http://localhost:8080/api/patient/results
 
 body Request
 ```json
