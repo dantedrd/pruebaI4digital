@@ -7,7 +7,7 @@ Los servicios desarrollados fueron los siguientes
 
 post http://localhost:8080/api/patient/results
 
-body Eequest
+body Request
 ```json
 [
     {
