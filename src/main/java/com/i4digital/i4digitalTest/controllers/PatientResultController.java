@@ -14,7 +14,7 @@ import java.util.HashMap;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/Patient")
+@RequestMapping("/api/patient")
 public class PatientResultController {
     @Autowired
     private PatientResultService patientResultService;

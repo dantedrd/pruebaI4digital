@@ -53,17 +53,21 @@ public class PatientResultServiceTest {
     void testShouldSaveAndGenerateTheResults() {
 
         PatientResultDto patientResultDto = new PatientResultDto();
+        patientResultDto.setDni(1234);
         patientResultDto.setSugar(60.0);
         patientResultDto.setFat(30.0);
         patientResultDto.setOxygen(20.0);
 
 
         Mockito.when(validInfoPatient.ValidTypeRisk(Mockito.anyDouble(),Mockito.anyDouble(),Mockito.anyDouble())).thenReturn(TypeRisk.HIGH);
+        Mockito.when(patientResultRepositoryAdapter.getByDni(Mockito.anyInt())).thenReturn(Mono.empty());
         Mockito.when(patientResultRepositoryAdapter.save(Mockito.any(PatientResultDto.class))).thenReturn(Mono.just(patientResultDto));
 
 
         ArrayList<PatientResultDto> patientResultDtos=new ArrayList<>();
         patientResultDtos.add(patientResultDto);
+
+
 
         StepVerifier
                 .create(patientResultService.saveResults(patientResultDtos).collectList())

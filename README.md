@@ -33,6 +33,13 @@ reponse
 ]
 ```
 
+##Ejemplo:
+
+![Test Image 1](evidencia1.png)
+
+![Test Image 1](evidencia2.png)
+
+
 ## Traer todos los resultados con su riesgo 
 
 GET: http://localhost:8080/api/patient/results
@@ -51,6 +58,9 @@ reponse:
     }
 ]
 ```
+##Ejemplo:
+
+![Test Image 1](evidencia3.png)
 
 
 ## Traer riesgo específico con el dni del paciente
@@ -69,6 +79,9 @@ reponse
 }
 ```
 
+##Ejemplo:
+
+![Test Image 1](evidencia4.png)
 
 
 
